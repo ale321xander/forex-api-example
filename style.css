@@ -1,0 +1,20 @@
+body {
+	margin: 0 auto;
+	max-width: 80vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+header {
+	margin-left: 30%;
+}
+.form_container {
+	margin-left: 30%;
+	display:none;
+}
+thead {position: relative;}
+.panels_container {
+	margin-top: 2rem;
+}
+form label {
+	display: block;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forex</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="ribbon.css"/>
+</head>
+<body>
+	<header class="container">
+		<h1>Forex For You!</h1>
+		<button>Convert Now</button>
+	</header>
+	<div class="panels_container">
+		<div class="currency_panel col-xs-12 col-s-12 col-m-12 col-lg-4" id="audusd">
+        <h2>AUDUSD</h2>
+        <div class="ribbon"><span>AUDUSD</span></div>
+        <table class="table table-bordered ">
+
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Time</td>
+              <td id="timeaudusd"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Price</td>
+              <td id="priceaudusd"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Symbol</td>
+              <td id="symbolaudusd"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="currency_panel col-xs-12 col-s-12 col-m-12 col-lg-4" id="gbpusd">
+        <h2>GBPUSD</h2>
+        <div class="ribbon blue"><span>EURUSD</span></div>
+        <table class="table table-bordered ">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Time</td>
+              <td id="timegbpusd"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Price</td>
+              <td id="pricegbpusd"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Symbol</td>
+              <td id="symbolgbpusd"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="currency_panel col-xs-12 col-s-12 col-m-12 col-lg-4" id="jpyusd">
+        <h2>JPYUSD</h2>
+        <div class="ribbon red"><span>GBPJPY</span></div>
+        <table class="table table-bordered ">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Time</td>
+              <td id="timejpyusd"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Price</td>
+              <td id="pricejpyusd"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Symbol</td>
+              <td id="symboljpyusd"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+<div class="form_container">
+	<form action="" class="form container">
+			<div class="form_header">
+			<label for="quantity">Enter quantity
+			  <input type="number" name="quantity">
+			</label>
+			<label for="select_forex">Select Forex
+			  <select name="select_forex" id="">
+			  	<option value="AUD|USD">AUDUSD</option>
+			  	<option value="GBP|USD">GBPUSD</option>
+			  	<option value="JPY|USD">JPYUSD</option>
+			  </select>
+			 </label>
+     </div>
+			 <input type="submit" value="Convert">
+			 <div id="result_container">
+			 <div id="result_header">Result</div>
+			 <output id="result"></output>
+			 </div>
+		</form>
+</div>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
